@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+//--- With a Math.Max()---
+// function findLongestWordLength(str) {
+//   let lengths = str.split(' ').map(word => word.length)
+//   return Math.max(...lengths)
+// }
+
+// findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+//---With a sort()---
+function findLongestWordLength(str) {
+  let sortedWords = str.split(' ').sort((a, b) => b.length - a.length)
+  return sortedWords[0].length
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+</html>

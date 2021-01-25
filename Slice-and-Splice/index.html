@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+// ---solution1---
+// function frankenSplice(arr1, arr2, n) {
+//   let localArray = arr2.slice();
+//   for (let i = 0; i < arr1.length; i++) {
+//     localArray.splice(n, 0, arr1[i]);
+//     n++;
+//   }
+//   return localArray;
+// }
+
+// ---solution2---
+function frankenSplice(arr1, arr2, n) {
+  let localArr = arr2.slice();
+  localArr.splice(n, 0, ...arr1);
+  return localArr;
+}
+</script>
+</html>

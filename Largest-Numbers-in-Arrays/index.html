@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+
+// ---Procedural---
+// function largestOfFour(arr) {
+//   return arr.map(Function.apply.bind(Math.max, null));
+// }
+
+// ---Declarative---
+function largestOfFour(arr) {
+  var results = [];
+  for (var n = 0; n < arr.length; n++) {
+    var largestNumber = arr[n][0];
+    for (var j = 1; j < arr[n].length; j++) {
+      if (arr[n][j] > largestNumber) {
+        largestNumber = arr[n][j];
+      }
+    }
+
+    results[n] = largestNumber;
+  }
+
+  return results;
+}
+</script>
+</html>

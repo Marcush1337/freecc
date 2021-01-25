@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+// ---While Loop---
+// function repeatStringNumTimes(string, times) {
+//   var repeatedString = "";
+//   while (times > 0) {
+//     repeatedString += string;
+//     times--;
+//   }
+//   return repeatedString;
+// }
+// repeatStringNumTimes("abc", 3);
+
+// ---With a BuildIn method
+// function repeatStringNumTimes(string, times) {
+//   if (times > 0)
+//     return string.repeat(times);
+//   else
+//     return "";
+// }
+// repeatStringNumTimes("abc", 3);
+
+// ---Recursion---
+function repeatStringNumTimes(string, times) {
+  var repeatedString = "";
+  while (times > 0) {
+    repeatedString += string;
+    times--;
+  }
+  return repeatedString;
+}
+repeatStringNumTimes("abc", 3);
+</script>
+</html>
